@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>To-do List</h1>
+  <form [formGroup]="taskForm">
+    <input name="name" formControlName="name">
+    <button (click)="postTask()">Add Task</button>
+  </form>
+  <div *ngFor="let task of tasks">
+    <app-todo-list-item [task]="task" (doneTaskEvent)="markTaskAsDone($event)" (removeTaskEvent)="removeTaskFromList($event)"></app-todo-list-item>
+  </div>
+</div>

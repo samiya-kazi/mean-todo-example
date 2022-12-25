@@ -1,0 +1,6 @@
+<div class="task-item">
+  <h3 [class.done]="task.done">{{task.name}}</h3>
+  <p>Added on: {{task.dateAdded | date}}</p>
+  <button *ngIf="!task.done" (click)="markAsDone()">Done</button>
+  <button (click)="removeTask()">X</button>
+</div>
