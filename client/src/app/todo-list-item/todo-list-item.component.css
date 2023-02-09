@@ -3,16 +3,21 @@
 }
 
 .task-item {
-  border: 1px grey solid;
-  padding: 20px;
-  margin: 10px 0;
+  border: 1px lightgray solid;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 button {
   color: white;
   border: none;
   margin: 10px;
-  padding: 8px
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .done-btn {
@@ -21,4 +26,17 @@ button {
 
 .remove-btn {
   background-color: red;
+}
+
+.done-btn:hover {
+  background-color: darkgreen;
+}
+
+.remove-btn:hover {
+  background-color: darkred;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
 }
