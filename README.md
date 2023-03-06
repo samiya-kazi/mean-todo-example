@@ -1,4 +1,4 @@
-# Mean To-Do Example
+# MEAN To-Do Example
 
 ## Objective
 This is a small MEAN stack application to show basic CRUD operations on an Angular application and Express server. In this application you can create a task, see a list of your tasks, mark a task as done and delete a completed task.
